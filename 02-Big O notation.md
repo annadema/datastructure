@@ -182,9 +182,8 @@ Example: we have an array of sorted numbers
 ![](/images/array10.png)  
 we have to find the number 10
 
-One way:  
-iterate using a for loop, until we find a 10  
 **linear search**  
+iterate using a for loop, until we find a 10  
 worst case scenario:  
 number is at the end of the array  
 more items 🡪 longer operation 🡪 run time of algorithm increases linearly and in direct proportion with size of our array.
@@ -208,6 +207,9 @@ we ignore items on the left🡪focus on the items on the right.
 
 in every step we narrow down our search by half. if we have 1 milion items in array, we find the target with a maximum of 19 comparisons.  
 we have logarithmic growth in algorithms where we reduce our work by half in every step (🡪tree and graph)
+
+**linear search: O(n)**  
+**binary search: O(log(n))**
 
 ## O(2^n) - exponential time
 
