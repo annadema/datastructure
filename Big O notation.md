@@ -1,14 +1,14 @@
 ## What is Big O
 
-- definition on Wikipedia: Big O Notation is a mathematical notation that describes the limiting behavior of a function, when the argument tends towards a particular value or infinity.
+> Wikipedia: Big O Notation is a mathematical notation that describes the limiting behavior of a function, when the argument tends towards a particular value or infinity.
 
-- Big O Notation, O(n)  
-  to describe the **performance** of an algorithm  
-  determine if a given algorithm is **scalable**  
-  algorithm scale well as the input grows really large.  
-  (code executes quickly on a computer doesn't mean perform with a large data set)
+Big O Notation, O(n)  
+to describe the **performance** of an algorithm  
+determine if a given algorithm is **scalable**  
+algorithm scale well as the input grows really large.  
+(code executes quickly on a computer doesn't mean perform with a large data set)
 
-- certain operations can be more or less costly depending on what data structure we use.
+certain operations can be more or less costly depending on what data structure we use.
 
 For example:  
 accessing an array element by its index is super fast.  
@@ -50,7 +50,7 @@ no matter number of items: runs in **constant time** 🡪 we simply indicate wit
 
 ---
 
-## O(n) -- linear time
+## O(n) - linear time
 
 ```
 public void Log(int[] numbers){
@@ -172,14 +172,14 @@ public static void Log(int[] numbers){
 
 ## ![](/images/curves.png)
 
-## O(log n) - Logarithm Time
+## O(log n) - logarithm Time
 
 logarithmic curve compared with linear:  
 linear curve grows at the same rate, but logarithmic curve slows down at some point  
 **an Algorithm that runs in logarithmic time is more efficient and more scalable that an algorithm that runs in linear or quadratic time.**
 
 Example: we have an array of sorted numbers  
-![](/images/array10.png)
+![](/images/array10.png)  
 we have to find the number 10
 
 One way:  
@@ -203,14 +203,13 @@ narrow down our search by half.
 ![](/images/array10-2.png)
 
 we look at the middle item🡪 smaller than the target value  
-we ignore items on the left🡪focus on the items on the right.
+we ignore items on the left🡪focus on the items on the right.  
 ![](/images/array10-3.png)
 
-in every step we narrow down our search by half. if we have 1 milion items in array, we find the target with a maximum of 19 comparisons.
-
+in every step we narrow down our search by half. if we have 1 milion items in array, we find the target with a maximum of 19 comparisons.  
 we have logarithmic growth in algorithms where we reduce our work by half in every step (🡪tree and graph)
 
-## O(2^n) - exponential growth
+## O(2^n) - exponential time
 
 the exponential growth is the opposite of the logaritmic growth.  
 the logaritmic curve slows down as the input size grows  
