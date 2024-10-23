@@ -104,10 +104,10 @@ we iterate over array of numbers and over the array of names.
 
 ```
 public void Log(int[] numbers, String[]names){
-    foreach (var number in numbers){      //O(n)
+    foreach (var number in numbers){      
         Console.WriteLine(number);
     }
-    foreach (var name in names){          //O(m)
+    foreach (var name in names){          
         Console.WriteLine(name);
     }
 }
@@ -128,7 +128,7 @@ runtime complexity: O ( n \* n) or O(n^2) 🡨🡪 algorithm runs in **quadratic
 ```
 public static void Log(int[] numbers, String[]names){
     foreach (var number in numbers){
-        foreach (var name in names){                              O(n^2)
+        foreach (var name in names){                              
             Console.WriteLine(number+"," + name);
         }
     }
